@@ -4,7 +4,9 @@
   "description": "Learn node, mongo, express and react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    //"test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node server.js --ignore public/",
+    "run": "webpack -wd"
   },
   "author": "Sai Krishna",
   "license": "ISC",
@@ -16,7 +18,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.10.3",
+    "@babel/node": "latest",
     "@babel/core": "^7.10.3",
     "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/preset-env": "^7.10.3",
